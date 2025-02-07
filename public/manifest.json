@@ -1,0 +1,62 @@
+{
+  /**
+   * Progressive Web App Manifest
+   * 
+   * Defines the application metadata and behavior for Progressive Web App (PWA)
+   * functionality. This configuration enables the app to be installed on devices
+   * and provides a native-like experience.
+   * 
+   * Integration Points:
+   * 1. Browser:
+   *    - Install prompts
+   *    - Home screen icons
+   *    - Splash screens
+   * 
+   * 2. Service Worker:
+   *    - Uses theme_color for UI
+   *    - Respects display mode
+   *    - Caches icons
+   * 
+   * 3. HTML:
+   *    - Linked in index.html
+   *    - Matches theme-color meta
+   *    - References icon assets
+   */
+  
+  // Application name shown on install prompt and home screen
+  "name": "SWS Todo",
+  
+  // Shorter name for space-constrained contexts
+  "short_name": "SWS Todo",
+  
+  // App description for install prompts and app stores
+  "description": "A powerful todo app with collaboration features and offline support",
+  
+  // Initial URL when launching from home screen
+  "start_url": "/",
+  
+  // Preferred display mode for the PWA
+  "display": "standalone",
+  
+  // Background color for splash screen
+  "background_color": "#ffffff",
+  
+  // Theme color for browser UI elements
+  "theme_color": "#4f46e5",
+  
+  // App icons for different contexts and sizes
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
